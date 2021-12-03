@@ -1,10 +1,9 @@
--- Create a function elem that returns True
--- if an element is in a given list and
--- returns False otherwise
-
-elemx :: Integer -> [Integer] -> Bool
-elemx _ [] = False
-elemx e (x:xs) = (e == x) || elemx e xs
 
 main = do
-    print (elemx 5 [5,6,7])
+	putStrln getMiddle "appi"
+getMiddle :: String -> String
+getMiddle s = if(rem (length s) 2 == 0) then returnEven s else returnOdd s
+
+returnEven :: String -> String
+returnEven (x:xs) = xs
+
